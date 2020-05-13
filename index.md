@@ -2,5 +2,7 @@
 
 ## Für MS Windows 64 Bit
 
-- [Compare & Backup](mtools/MCmpBack.7z)
-- [Bilderalbum](mtools/MPicAlb.7z)
+- MCmpBack: Compare & Backup
+  Ein kleines Backup-Programm - [Download auf GitHub](https://github.com/AntoineLegra/antoinelegra.github.io/)
+- MPicAlb: Bilderalbum
+  Ein kleines Bilderalbum mit Datenbank - [Download auf GitHub](https://github.com/AntoineLegra/antoinelegra.github.io/))
