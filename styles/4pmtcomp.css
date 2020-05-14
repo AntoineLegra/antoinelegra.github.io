@@ -1,0 +1,33 @@
+@import url(4pmt.css);
+
+html
+{
+    color               : black;
+    background          : azure;
+}
+
+ul {
+    list-style-image    : url("bludiamd.gif");
+    margin              : 0 0 0 0;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family         : "ft_computer", "ft_stdtitel", sans-serif;
+}
+
+header {
+    font-family         : "ft_computer", "ft_stdtitel", sans-serif;
+}
+
+#linksoben {
+    background-color    : royalblue;
+}
+
+#topthema {
+    background-color    : royalblue;
+}
+
+footer {
+    font-family         : "ft_computer", "ft_stdtitel", sans-serif;
+}
+

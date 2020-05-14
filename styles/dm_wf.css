@@ -1,0 +1,146 @@
+
+/*
+ *  Alle Überschriften-Fonts
+ */
+
+@font-face
+{
+    font-family         : ft_dwelt;
+    src                 : url("../wff/keniar.ttf");
+}
+
+@font-face
+{
+    font-family         : ft_medien;
+    src                 : url("../wff/juleer.ttf");
+}
+
+@font-face
+{
+    font-family         : ft_lexikon;
+    src                 : url("../wff/buenardr.ttf");
+}
+
+@font-face
+{
+    font-family         : ft_leben;
+    src                 : url("../wff/chewy.ttf");
+}
+
+@font-face
+{
+    font-family         : ft_kreta;
+    src                 : url("../wff/berkshiresr.ttf");
+}
+
+@font-face
+{
+    font-family         : ft_quanfa;
+    src                 : url("../wff/segoepr.ttf");
+}
+
+@font-face
+{
+    font-family         : ft_hintergrund;
+    src                 : url("../wff/englebertr.ttf");
+}
+
+@font-face
+{
+    font-family         : ft_start;
+    src                 : url("../wff/dreamorp.ttf");
+}
+
+@font-face
+{
+    font-family         : ft_buecher;
+    src                 : url("../wff/medievals.ttf");
+}
+
+@font-face
+{
+    font-family         : ft_historie;
+    src                 : url("../wff/blackchan.ttf");
+}
+
+@font-face
+{
+    font-family         : ft_computer;
+    src                 : url("../wff/neuchar.ttf");
+}
+
+@font-face
+{
+    font-family         : ft_china;
+    src                 : url("../wff/chicler.ttf");
+}
+
+@font-face
+{
+    font-family         : ft_amazonen;
+    src                 : url("../wff/handleer.ttf");
+}
+
+@font-face
+{
+    font-family         : ft_menschen;
+    src                 : url("../wff/macondor.ttf");
+}
+
+@font-face
+{
+    font-family         : ft_stdtitel;
+    src                 : url("../wff/amaranter.ttf");
+}
+
+/*
+ *  Alle Textsatz-Fonts
+ */
+
+@font-face
+{
+    font-family         : fs_stdtxt;
+    src                 : url("../wff/buenardr.ttf");
+/*    src                 : url("../wff/undotumr.ttf");*/
+/*    src                 : url("../wff/neuchar.ttf");*/
+}
+
+@font-face
+{
+    font-family         : fs_smallite;
+    src                 : url("../wff/signikarl.ttf");
+}
+
+@font-face
+{
+    font-family         : fs_smallbold;
+    src                 : url("../wff/signikasb.ttf");
+}
+
+@font-face
+{
+    font-family         : fs_preformed;
+    src                 : url("../wff/inconsolr.ttf");
+}
+
+/*
+ *  Alle Zier-Fonts für Initiale
+ */
+
+@font-face
+{
+    font-family         : zi_historie;
+    src                 : url("../wff/trollbai.ttf");
+}
+
+@font-face
+{
+    font-family         : zi_dwelt;
+    src                 : url("../wff/konanurk.ttf");
+}
+
+@font-face
+{
+    font-family         : zi_firstletter;
+    src                 : url("../wff/amaranter.ttf");
+}

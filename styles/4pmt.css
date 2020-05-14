@@ -1,0 +1,355 @@
+@import url(dm_wf.css);
+
+header { /* ---------------------------------- der flexible Titel-Container */
+    display             : flex;
+    flex-flow           : row nowrap;
+    justify-content     : space-between;
+    align-items         : stretch;
+    top                 : 0;
+    left                : 0;
+    height              : 4em;
+    color               : #ffffcc;
+    font-weight         : bold;
+    font-size           : 120%;
+}
+
+#linksoben { /* ----------- der Haupttitel links oben innerhalb des headers */
+    flex                : auto;
+    max-width           : 29%;
+    padding-top         : 1.5em;
+    margin-left         : 0.15em;
+    margin-right        : 0.1em;
+    text-align          : center;
+    border              : 1px solid #666;
+    border-radius       : 25px;
+    box-shadow          : 5px 5px 5px 0px #777;
+}
+
+#topthema { /* ------------------- das Top-Thema oben innerhalb des headers */
+    flex                : auto;
+    padding-top         : 1.5em;
+    padding-left        : 2.5em;
+    margin-left         : 0.1em;
+    margin-right        : 0.15em;
+    text-align          : left;
+    border              : 1px solid #666;
+    border-radius       : 25px;
+    box-shadow          : 5px 5px 5px 0px #777;
+}
+
+nav { /* ------------------------------- der flexible Navigations-Container */
+    display             : flex;
+    flex-flow           : row nowrap;
+    justify-content     : space-between;
+    align-items         : stretch;
+    height              : 40px;
+    color               : black;
+    margin              : 1em;
+    font-family         : "fs_smallite", sans-serif;
+    /*border              : 1px dotted black;*/
+}
+
+nav a { /* ------------------------------ Das Item im Navigations-Container */
+    flex                : auto;
+    flex-basis          : 20%;
+    min-height          : 20px;
+    margin-bottom       : 0.15em;
+    margin-left         : 0.15em;
+    margin-right        : 0.15em;
+    padding-top         : 0.55em;
+    padding-bottom      : 0.55em;
+    color               : black;
+    text-align          : center;
+    border              : 1px solid #666;
+    border-radius       : 10px;
+    box-shadow          : 5px 5px 5px 0px #777;
+}
+
+nav a:hover { /* ------------------------------------- Der Farbblend-Effekt */
+    background          : silver none repeat scroll 0%;
+    color               : yellow;
+    transition          : color 1.5s ease;
+}
+
+article { /* -------------------------------------- Der Haupttext der Seite */
+    margin-top          : 1em;
+    margin-right        : auto;
+    margin-bottom       : 0;
+    margin-left         : 0;
+    padding-top         : 1em;
+    padding-right       : 1em;
+    padding-bottom      : 0;
+    padding-left        : 1em;
+    font-family         : "fs_stdtxt", sans-serif;
+    font-size           : 1.2em;
+    text-align          : justify;
+    /*border-style: dotted;*/
+}
+
+figure { /* ----------------------------- ein toll aussehender Bilderrahmen */
+    display             : block;
+    padding             : .5em;
+    background-color    : #ffffe6;
+    border-width        : thin;
+    border-style        : solid;
+    border-color        : #999;
+    box-shadow          : 5px 5px 5px 0px #777;
+    border-radius       : 10px;
+}
+
+figcaption { /* ------------------ der Bildtext innerhalb des Bilderrahmens */
+    font-family         : "fs_smallite", sans-serif;
+    font-size           : 80%;
+    font-weight         : normal;
+    text-align          : center;
+}
+
+.figlinks { /* ------------------------ dieses Bild wird links angezeigt... */
+    float               : left;
+    margin              : 0em 1.5em .5em 0em;        /*top right bottom left*/
+}
+
+.figrechts { /* -------------------------------------- ...und dieses rechts */
+    float               : right;
+    margin              : 0em 0.5em .5em 1em;        /*top right bottom left*/
+}
+
+hr { /* ---------- so sieht die Linie aus wie bei den Header-Formatierungen */
+    border              : none;
+    color               : silver;
+    background          : silver;
+    height              : 1px;
+    margin-left         : 0;
+    width               : 98%;
+}
+
+h1 { /* ----------------------------- die verschiedenen Titelformatierungen */
+    border-top          : 1px solid silver;
+    margin              : 1em 1em 1em 0;
+    padding             : 0 0.25em;
+    font-family         : "ft_stdtitel", sans-serif;
+    font-size           : 1.3em;
+    text-align          : left;
+}
+
+h2 {
+    border-top          : 1px solid silver;
+    margin              : 1em 1em 1em 0;
+    padding             : 0 0.25em;
+    font-family         : "ft_stdtitel", sans-serif;
+    font-size           : 1.2em;
+    text-align          : left;
+}
+
+h3 {
+    border-top          : 1px solid silver;
+    margin              : 1em 1em 1em 0;
+    padding             : 0 0.25em;
+    font-family         : "ft_stdtitel", sans-serif;
+    font-size           : 1.1em;
+    text-align          : left;
+}
+
+h4 {
+    border-bottom       : 1px solid silver;
+    margin              : 1em 1em 1em 0;
+    padding             : 0 0.25em;
+    font-family         : "ft_stdtitel", sans-serif;
+    font-size           : 1.02em;
+    text-align          : left;
+}
+
+h5 {
+    margin              : 1em 1em 1em 0;
+    padding             : 0 0.25em;
+    font-family         : "ft_stdtitel", sans-serif;
+    font-size           : 0.92em;
+    text-align          : left;
+}
+
+footer { /* --------------------------------- der flexible Fußzeilenbereich */
+    display             : flex;
+    flex-flow           : row nowrap;
+    justify-content     : space-between;
+    align-items         : stretch;
+    height              : 3em;
+    margin              : 1.5em;
+    color               : black;
+    font-size           : 90%;
+}
+
+#lastchanged { /* ------ Anzeige der letzten Änderung innerhalb des footers */
+    flex                : auto;
+    padding-top         : 0.7em;
+    text-align          : right;
+    border-top          : 1px solid silver;
+}
+
+pre { /* -------------------------------- der Text für Code oder Stammbäume */
+    font-family         : "fs_preformed", monospace;
+    font-size           : 10.5pt;
+}
+
+.zweispalten { /* ---------------- Verwendung als (div class="zweispalten") */
+    column-count        : 2;
+    column-rule         : solid 1px;
+    column-gap          : 2em;
+    column-fill         : balance;
+    -moz-column-count   : 2;
+    -moz-column-rule    : solid 1px;
+    -moz-column-gap     : 2em;
+    -moz-column-fill    : balance;
+    -webkit-column-count: 2;
+    -webkit-column-rule : solid 1px;
+    -webkit-column-gap  : 2em;
+    -webkit-column-fill : balance;
+}
+
+.initial:first-letter { /* --------------- der erste Buchstabe ist verziert */
+    font-family         : "zi_firstletter", serif;
+    font-size           : 130%;
+}
+
+.anmerkung { /* ---- ein hübscher Container für Hervorhebungen, Zitate usw. */
+    border              : 1px solid #999;
+    margin              : 0.7em 1em;
+    padding             : 0.3em 1.5em;
+    font-family         : "fs_smallite", sans-serif;
+    font-size           : 91%;
+    background-color    : #ffffe6;
+    box-shadow          : 5px 5px 5px 0px #777;
+    border-radius       : 20px;
+}
+
+.indexlink { /* ----------------- diverse Formatierungen für diverse Zwecke */
+    margin              : 1em 1em 1em 0;
+    padding             : 0 0.25em;
+    font-family         : "fs_smallbold", sans-serif;
+    font-size           : 0.9em;
+    font-weight         : bold;
+    text-align          : right;
+}
+
+.vorsatz {
+    font-family         : "fs_smallbold", sans-serif;
+    font-size           : 0.9em;
+    text-align          : justify;
+}
+
+.notiz {
+    margin              : 1em 1em 1em 0;
+    padding             : 0 0.25em;
+    font-family         : "fs_smallbold", sans-serif;
+    font-size           : 0.9em;
+    border-top          : 1px solid silver;
+}
+
+.genealogietext {
+    font-family         : "fs_stdtxt", serif;
+    /*font-family         : "fs_smallite", sans-serif;*/
+    font-size           : 1em;
+    text-align          : justify;
+}
+
+.zitate {
+    margin-left         : 40px;
+    font-family         : "fs_smallbold", sans-serif;
+    font-size           : 0.9em;
+    font-style          : italic;
+}
+
+.verfasser {
+    margin-right        : 40px;
+    font-family         : "fs_smallbold", sans-serif;
+    font-size           : 0.9em;
+    font-style          : italic;
+    text-align          : right;
+}
+
+.zenter {
+    text-align          : center;
+}
+
+.fussnote { /* -------------------- die Fußnoten im wissenschaftlichen Stil */
+		margin-left         : 1.5em;
+    text-indent         : -1.5em;
+    margin-top          : 0.2em;
+    margin-bottom       : 0em;
+    font-family         : "fs_smallite", sans-serif;
+    font-size           : 95%;
+}
+
+.fussnotetext {
+    font-size           : 85%;
+}
+
+a.fussnotetext:link {
+    color               : red;
+}
+
+a.fussnotetext:visited {
+    color               : maroon;
+    text-decoration     : none;
+}
+
+.prettytable { /* ----------------------------------- die hübschen Tabellen */
+    margin-top          : 1em;
+    margin-bottom       : 1em;
+    background-color    : #ffffe6;
+    border-collapse     : collapse;
+    border-width        : 1px;
+    border-style        : solid;
+    border-color        : #000000;
+    empty-cells         : show;
+    text-align          : left;
+    box-shadow          : 5px 5px 5px 0px #777;
+}
+
+.prettyrow {
+    border-collapse     : collapse;
+    border-width        : 1px;
+    border-style        : solid;
+    border-color        : #000000;
+}
+
+.prettycol {
+    padding             : 0.2em 0.3em 0em 0.3em;
+    border-collapse     : collapse;
+    border-width        : 1px;
+    border-style        : solid;
+    border-color        : #000000;
+    vertical-align      : top;
+}
+
+.prettyheader {
+    padding             : 0.2em 0em 0em 0.5em;
+    border-collapse     : collapse;
+    border-width        : 1px;
+    border-style        : solid;
+    border-color        : #000000;
+    background-color    : #f0f0c0;
+    vertical-align      : top;
+    text-align          : center;
+}
+
+a.plain { /* ---------------------------------- diverse Link-Formatierungen */
+    text-decoration     : none;
+}
+
+a:link {
+    color               : blue;
+    text-decoration     : none;
+}
+
+a:hover { /* -------------------------- der Farbblend-Effekt für alle Links */
+    transition          : color 1.5s ease;
+    background          : yellow none repeat scroll 0%;
+    color               : red;
+    text-decoration     : none;
+}
+
+a:visited {
+    color               : chocolate;
+    text-decoration     : none;
+}
+
