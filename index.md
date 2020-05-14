@@ -14,10 +14,10 @@ Die ›4 Pieces MTools‹ bestehen aus den Programmen:
 - Bilderalbum mit Datenbank
 
 ## Find & Backup 
-Find & Backup, oder kurz [MFndBack](MFndBack.7z), ist eine reine Studie aus der Zeit, als der Autor anfing, sich mit Lazarus und FreePascal zu beschäftigen. Aus dieser Studie heraus entstand dann das Zwei-Fenster-Tool Compare & Backup, das der Autor als Backup-Programm auf seinen PCs unter MS Windows X und Fedora Linux einsetzt.
+Find & Backup, oder kurz [MFndBack](_include/MFndBack.7z), ist eine reine Studie aus der Zeit, als der Autor anfing, sich mit Lazarus und FreePascal zu beschäftigen. Aus dieser Studie heraus entstand dann das Zwei-Fenster-Tool Compare & Backup, das der Autor als Backup-Programm auf seinen PCs unter MS Windows X und Fedora Linux einsetzt.
 
 ## Compare & Backup
-Compare & Backup, kurz [MCmpBack](https://github.com/AntoineLegra/antoinelegra.github.io/_include/MCmpBack.7z), ist ein reines Backup-Programm, das in einer Zwei-Fenster-Ansicht ein halbautomatisches Backup von der Festplatte auf Sicherungsmedien wie externe Festplatten, SDcards oder USBsticks bietet. Basis dafür sind Profile, in denen Quell- und Ziel-Laufwerk sowie Dateifilter vorab festgelegt werden.
+Compare & Backup, kurz [MCmpBack](_include/MCmpBack.7z), ist ein reines Backup-Programm, das in einer Zwei-Fenster-Ansicht ein halbautomatisches Backup von der Festplatte auf Sicherungsmedien wie externe Festplatten, SDcards oder USBsticks bietet. Basis dafür sind Profile, in denen Quell- und Ziel-Laufwerk sowie Dateifilter vorab festgelegt werden.
 
 ## Kalender mit Datenbank
 Der Kalender mit Datenbank, kurz MKalender, ist ein kleines Kalender-Tool mit Datenbank-Anbindung. Hierfür wurde u.a. eine eigene Kalender-Komponente für die Lazarus ToolPalette entwickelt und mit der SQLite-Unterstützung von Lazarus experimentiert. Es wurden Feiertagsberechnungen implementiert, Suchmöglichkeiten sowie Kontakt eingebaut.
