@@ -35,12 +35,56 @@
 </figure>
 
 <p class="initial">
-  Biilderalbum für MS Windows ist nur als 64 Bit-Version zu erhalten und kann hier heruntergeladen werden.
+  Das Bilderalbum mit Datenbank, kurz MPicAlb, ist nicht nur der Versuch, mit Bildern zu arbeiten — also sie anzuzeigen, Informationen auszulesen usw. —, sondern auch, die Bilder nachträglich in eine gewisse Ordnung zu bekommen, sie mit Kategorien und Notizen zu versehen, um dann danach suchen oder sie gruppieren zu können. In das Programmverzeichnis muss (noch) eine <code>sqlite3.dll</code> kopiert werden, ohne die das Windows-Programm nicht funktioniert. Die Linux-Version hat (noch) den Pfad einprogrammiert, mit dem die Library unter Fedora zu finden ist.
 </p>
 
-<p>
-  <a href="winx/mpawinx.7z">mpawinx.7z</a>
+<p class="initial">
+  Die beiden Programm-Versionen für MS Windows X und Fedora Linux basieren auf denselben Quelltexten und liegen nur als 64 Bit-Versionen vor. Aus experimentellen Gründen — das Programm sollte sowohl auf meinen Windows PC als auch auf meinem Linux Laptop laufen — sind (noch) bestimmte Voraussetzungen nötig. Dazu gehört, dass sich sowohl die Bilderalben als auch die Bilder zwangsläufig im Bilder-Ordner des jeweiligen Betriebssystems befinden müssen: Die Bilderalben (Datenbanken) im Unterordner ›Alben‹, die Bilder können ihrerseits in Unter-Ordnern des Bild-Ordners stehen.
 </p>
+
+<p class="initial">
+  Dadurch ›funktionieren‹ die Bilderalben selbst unabhängig vom Betriebssystem und auch vom jeweiligen Computer, d.h. man kann sie einfach auf einen anderen PC kopieren. In der Datenbank selbst ist nämlich nur der relative Pfad des Bildes — ausgehend vom Ordner ›Alben‹ — gespeichert und wird erst zur Laufzeit zu einem kompletten Pfad zusammengesetzt, der eben auf den o.g. Voraussetzungen basiert und auch für das jeweilige System (›\‹ bzw. ›/‹) angepasst wird.
+</p>
+
+<p class="initial">
+  Für die Blideralben bzw. die Ansicht im Programm werden Thumbnails der Bilder erzeugt. Dieser Prozess kann bei der Neuaufnahme von Bildern etwas dauern, sofern in den (jpeg-) Bildern selbst keine Thumbnails enthalten sind. Das ist häufig der Fall bei Bildern, die mit einfachen Bearbeitungsprogrammen verändert werden. Durch die Verwendung des Packages <code>dEXIF</code> (siehe Online-Package-Manager in Lazarus) besteht jedenfalls die Möglichkeit, die Thumbnail-Erzeugung zu beschleunigen. Bedingt durch das verwendete Konzept kann man jedoch die Erzeugung eines Album auf seinem schnellsten PC erledigen und sie dann auf einen anderen PC einfach übernehmen — nicht zu vergessen dieselbe Ordnerstruktur auch für die Bilder.
+</p>
+
+<p class="initial">
+  Um auch nicht so leistungsstarke PCs bei der Zusammenarbeit mit einem Bilderalbum nicht unnötig auszubremsen, werden immer nur soviele Thumbnails aus der Datenbank geholt, wie auf das Fenster des Programmes passen. Das geht auch auf solchen PCs relativ schnell. Die Navigation erfolgt daher über vier Buttons.
+</p>
+
+<p class="initial">
+  Mit einem Doppelklick auf ein Thumbnail wird eine Bildershow gestartet, die mit dem <code>space key</code> das nächste, mit dem <code>back space key</code> das vorige Bild angezeigt, und die mit dem &lt;escape key&gt; beendet wird.
+</p>
+
+<p class="initial">
+  Über einen Rechtsklick auf ein Thumbnail können die Bildeigenschaften bearbeitet werden. Dazu gehören auch Eingabefelder, an Hand derer die Bilder später gesucht oder gefiltert werden können. Teile dieser Werte stammen aus den Tags im Bild selbst, die bestimmte Bearbeitungsprogramme vergeben können.
+</p>
+
+<p class="initial">
+  Beim Filtern des Bilderalbums kann immer nur nach einem zusammenhängenden Begriff gefiltert werden. Die Begriffe in den einzelnen Feldern werden dabei mit <code>AND</code> verknüpft. In einer späteren Version werden diese Möglichkeiten weiter ausgebaut.
+</p>
+
+<h4>Das Programme für MS Windows</h4>
+
+<p class="initial">
+  Bilderalbum für MS Windows gibt es nur als 64 Bit-Version:
+</p>
+
+<ul>
+  <li><a href="winx/mpawinx.7z">mpawinx.7z</a></li>
+</ul>
+
+<h4>Das Programme für Fedora 32</h4>
+
+<p class="initial">
+  Bilderalbum für Fedora 32 gibt es nur als 64 Bit-Version:
+</p>
+
+<ul>
+  <li><a href="linx/mpalinx.7z">mpalinx.7z</a></li>
+</ul>
 
 </article>
 
@@ -49,7 +93,7 @@
     Zuletzt geändert am:
     <br />
     <time>
-      16. Mai 2020
+      17. Mai 2020
     </time>
   </div>
 </footer>

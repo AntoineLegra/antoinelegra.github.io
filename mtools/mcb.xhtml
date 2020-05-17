@@ -35,12 +35,52 @@
 </figure>
 
 <p class="initial">
-  Compare &amp; Backup für MS Windows ist nur als 64 Bit-Version zu erhalten und kann hier heruntergeladen werden.
+  Compare &amp; Backup, kurz MCmpBack, ist ein reines Backup-Programm, das in einer Zwei-Fenster-Ansicht ein halbautomatisches Backup von der Festplatte auf Sicherungsmedien wie externe Festplatten, SDcards oder USBsticks, aber auch umgekehrt bietet. Basis dafür sind Profile, in denen Quell- und Ziel-Pfad sowie ein Dateifilter als Regulärer Ausdruck vorab festgelegt werden. Ich benutze MCmpBack als ausschließliches Backup-Programm auf meinen PCs sowohl unter MS Windows X als auch Fedora 32 Linux. Beide Programme basieren auf denselben Quelltexten und liegen nur als 64 Bit-Versionen vor.
 </p>
 
-<p>
-  <a href="winx/mcbwinx.7z">mcbwinx.7z</a>
+<p class="initial">
+  Mit dem Programm ist ein halbautomatisches Backup möglich: Es sucht mit einem ButtonClick in den beiden Verzeichnissen links und rechts nach geänderten und neuen Dateien, die dann mit einem weiteren ButtonClick in das andere Verzeichnis kopiert werden können. Aber auch die Auswahl der zu kopierenden Dateien per Maus ist möglich. Sie können dann auch mit einem RechtsClick kopiert werden.
 </p>
+
+<p class="initial">
+  Die jeweiligen Dateien werden dabei zur Unterstützung des Nutzers in verschiedenen Farben angezeigt:
+</p>
+
+<ul>
+  <li>Grün sind neuere Dateien, die ihre Partner, die roten Dateien, überschreiben.</li>
+  <li>Rot sind ältere Dateien, die von den neueren, grünen überschrieben werden.</li>
+  <li>Blau sind neue Dateien, auch Waisen genannt, die noch keinen Partner auf der anderen Seite haben.</li>
+  <li>Grau sind die Platzhalter für die blauen, neuen Dateien bzw. nicht vorhandene Ordner.</li>
+  <li>Dateien, die gleich sind, werden nicht angezeigt.</li>
+</ul>
+
+<p class="initial">
+  Nicht vorhandene Ordner werden beim Kopieren automatisch erzeugt. Mit der neuesten Version ist es aber auch möglich, ganze Ordner zu löschen — aus Sicherheitsgründen jedoch immer nur einen und auch nur per RechtsClick.
+</p>
+
+<p class="initial">
+  Ein weiteres Sicherheitsnetz ist, dass Dateien und Ordner — wann immer möglich — nur in den Papierkorb verschoben werden. Das funktioniert auch unter Linux und wird ermöglicht durch die Unit <code>t4a_trashcan.pas</code> von Hans Luijten, die auf <a href="https://www.tweaking4all.com/software-development/lazarus-development/lazarus-crossplatform-trashcan/">tweaking4all.com</a> zu finden ist.
+</p>
+
+<h4>Das Programme für MS Windows</h4>
+
+<p class="initial">
+  Compare &amp; Backup für MS Windows gibt es nur als 64 Bit-Version:
+</p>
+
+<ul>
+  <li><a href="winx/mcbwinx.7z">mcbwinx.7z</a></li>
+</ul>
+
+<h4>Das Programme für Fedora 32</h4>
+
+<p class="initial">
+  Compare &amp; Backup für Fedora 32 gibt es nur als 64 Bit-Version:
+</p>
+
+<ul>
+  <li><a href="linx/mcbwinx.7z">mcblinx.7z</a></li>
+</ul>
 
 </article>
 
@@ -49,7 +89,7 @@
     Zuletzt geändert am:
     <br />
     <time>
-      16. Mai 2020
+      17. Mai 2020
     </time>
   </div>
 </footer>
