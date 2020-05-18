@@ -39,51 +39,42 @@
 </p>
 
 <p class="initial">
-  Die beiden Programm-Versionen für MS Windows X und Fedora Linux basieren auf denselben Quelltexten und liegen nur als 64 Bit-Versionen vor. Aus experimentellen Gründen — das Programm sollte sowohl auf meinen Windows PC als auch auf meinem Linux Laptop laufen — sind (noch) bestimmte Voraussetzungen nötig. Dazu gehört, dass sich sowohl die Bilderalben als auch die Bilder zwangsläufig im Bilder-Ordner des jeweiligen Betriebssystems befinden müssen: Die Bilderalben (Datenbanken) im Unterordner ›Alben‹, die Bilder können ihrerseits in Unter-Ordnern des Bild-Ordners stehen.
+  Die beiden Programm-Versionen für MS Windows X und Fedora Linux basieren auf denselben Quelltexten und liegen nur als 64 Bit-Versionen vor. Aus experimentellen Gründen — das Programm sollte sowohl auf meinen Windows PC als auch auf meinem Linux Laptop laufen — sind (noch) bestimmte Voraussetzungen nötig. Dazu gehört, dass sich sowohl die Bilderalben als auch die Bilder zwangsläufig im Bilder-Ordner des jeweiligen Nutzers befinden müssen: Die Bilderalben (Datenbanken) im Unterordner ›Alben‹, die Bilder können ihrerseits in Unter-Ordnern des Bild-Ordners stehen.
 </p>
 
 <p class="initial">
-  Dadurch ›funktionieren‹ die Bilderalben selbst unabhängig vom Betriebssystem und auch vom jeweiligen Computer, d.h. man kann sie einfach auf einen anderen PC kopieren. In der Datenbank selbst ist nämlich nur der relative Pfad des Bildes — ausgehend vom Ordner ›Alben‹ — gespeichert und wird erst zur Laufzeit zu einem kompletten Pfad zusammengesetzt, der eben auf den o.g. Voraussetzungen basiert und auch für das jeweilige System (›\‹ bzw. ›/‹) angepasst wird.
+  Dadurch ›funktionieren‹ die Bilderalben selbst unabhängig vom Betriebssystem und auch vom jeweiligen Nutzer, d.h. man kann sie einfach auf einen anderen PC kopieren. In der Datenbank selbst ist nämlich nur der relative Pfad des Bildes — ausgehend vom Ordner ›Alben‹ — gespeichert und wird erst zur Laufzeit zu einem kompletten Pfad zusammengesetzt, der eben auf den o.g. Voraussetzungen basiert und auch für das jeweilige System (›\‹ bzw. ›/‹) angepasst wird.
 </p>
 
 <p class="initial">
-  Für die Blideralben bzw. die Ansicht im Programm werden Thumbnails der Bilder erzeugt. Dieser Prozess kann bei der Neuaufnahme von Bildern etwas dauern, sofern in den (jpeg-) Bildern selbst keine Thumbnails enthalten sind. Das ist häufig der Fall bei Bildern, die mit einfachen Bearbeitungsprogrammen verändert werden. Durch die Verwendung des Packages <code>dEXIF</code> (siehe Online-Package-Manager in Lazarus) besteht jedenfalls die Möglichkeit, die Thumbnail-Erzeugung zu beschleunigen. Bedingt durch das verwendete Konzept kann man jedoch die Erzeugung eines Album auf seinem schnellsten PC erledigen und sie dann auf einen anderen PC einfach übernehmen — nicht zu vergessen dieselbe Ordnerstruktur auch für die Bilder.
+  Für die Bilderalben bzw. die Ansicht im Programm werden Thumbnails der Bilder erzeugt. Dieser Prozess kann bei der Neuaufnahme von Bildern etwas dauern, sofern in den (jpeg-) Bildern selbst keine Thumbnails enthalten sind. Das ist häufig der Fall bei Bildern, die mit einfachen Bearbeitungsprogrammen verändert werden. Durch die Verwendung des Packages <code>dEXIF</code> (siehe Online-Package-Manager in Lazarus) besteht jedenfalls die Möglichkeit, die Thumbnail-Erzeugung zu beschleunigen. Bedingt durch das verwendete Konzept kann man jedoch die Erzeugung eines Albums auf seinem schnellsten PC erledigen und es dann auf einen anderen PC einfach übernehmen — nicht zu vergessen dieselbe Ordnerstruktur auch für die Bilder.
 </p>
 
 <p class="initial">
-  Um auch nicht so leistungsstarke PCs bei der Zusammenarbeit mit einem Bilderalbum nicht unnötig auszubremsen, werden immer nur soviele Thumbnails aus der Datenbank geholt, wie auf das Fenster des Programmes passen. Das geht auch auf solchen PCs relativ schnell. Die Navigation erfolgt daher über vier Buttons.
+  Um auch nicht so leistungsstarke PCs bei der Zusammenarbeit mit einem Bilderalbum nicht unnötig auszubremsen, werden immer nur soviele Thumbnails aus der Datenbank geholt, wie auf das Fenster des Programmes passen. Das geht auch auf solch langweiligen PCs relativ schnell. Die Navigation erfolgt daher statt über einen Scrollbalken mit Hilfe von vier NavigationButtons.
 </p>
 
 <p class="initial">
-  Mit einem Doppelklick auf ein Thumbnail wird eine Bildershow gestartet, die mit dem <code>&lt;space key&gt;</code> das nächste, mit dem <code>&lt;back space key&gt;</code> das vorige Bild angezeigt, und die mit dem <code>&lt;escape key&gt;</code> beendet wird.
+  Mit einem Doppelklick auf ein Thumbnail wird eine Bildershow gestartet, die mit dem <code>&lt;space key&gt;</code> das nächste, mit dem <code>&lt;back space key&gt;</code> das vorige Bild anzeigt, und die mit dem <code>&lt;escape key&gt;</code> beendet wird.
 </p>
 
 <p class="initial">
-  Über einen Rechtsklick auf ein Thumbnail können die Bildeigenschaften bearbeitet werden. Dazu gehören auch Eingabefelder, an Hand derer die Bilder später gesucht oder gefiltert werden können. Teile dieser Werte stammen aus den Tags im Bild selbst, die Kameras und Smartphones, aber auch bestimmte Bearbeitungsprogramme vergeben können.
+  Über einen Rechtsklick auf ein Thumbnail können die Bildeigenschaften bearbeitet werden. Das sind Kategorien und Stichpunkte, an Hand derer die Bilder später gesucht oder gefiltert werden können. Teile dieser Werte stammen aus den Tags im Bild selbst, die Kameras und Smartphones, aber auch bestimmte Bearbeitungsprogramme vergeben können.
 </p>
 
 <p class="initial">
-  Beim Filtern des Bilderalbums kann immer nur nach einem zusammenhängenden Begriff je Feld gefiltert werden. Die einzelnen Suchbegriffe werden dabei mit <code>AND</code> verknüpft.
+  Beim Filtern des Bilderalbums kann immer nur nach einem zusammenhängenden Begriff je Feld gefiltert werden. Die einzelnen Suchbegriffe werden dabei (noch) mit <code>AND</code> verknüpft.
 </p>
 
-<h4>Das Programme für MS Windows</h4>
+<h4>Download</h4>
 
 <p class="initial">
-  Bilderalbum für MS Windows gibt es nur als 64 Bit-Version:
+  Die Programme werden nicht installiert, sie laufen in jedem Verzeichnis, benötigen aber dazu eine SQLite-Library. Unter Windows muss die <code>sqlite3.dll</code> im selben Verzeichnis stehen, wie das Programm, in der Linux-Version ist der Pfad (noch) hart codiert für Fedora. Die Programme legen außerdem Konfigurationsdateien an, in Linux im <code>HOME</code> unter <code>.config/mtools/MPicAlb</code>, unter WinX im User-Verzeichnis unter <code>AppData\Roaming\mtools\MPicAlb</code>. Die MPicAlb-Datenbank muss unterhalb des jeweiligen Ordners <code>Bilder</code> im Ordner <code>Alben</code> gespeichert werden, die Bilder müssen sich mindestens im <code>Bilder</code>-Ordner befinden, besser aber in SubOrdnern unterhalb von <code>Bilder</code>.
 </p>
 
 <ul>
-  <li><a href="winx/mpawinx.7z">mpawinx.7z</a></li>
-</ul>
-
-<h4>Das Programme für Fedora 32</h4>
-
-<p class="initial">
-  Bilderalbum für Fedora 32 gibt es nur als 64 Bit-Version:
-</p>
-
-<ul>
-  <li><a href="linx/mpalinx.7z">mpalinx.7z</a></li>
+  <li><a href="winx/mpawinx.7z">mpawinx.7z</a> für MS Windows, 64 Bit-Version</li>
+  <li><a href="linx/mpalinx.7z">mpalinx.7z</a> für Fedora 32, 64 Bit-Version</li>
 </ul>
 
 </article>
@@ -93,7 +84,7 @@
     Zuletzt geändert am:
     <br />
     <time>
-      17. Mai 2020
+      18. Mai 2020
     </time>
   </div>
 </footer>

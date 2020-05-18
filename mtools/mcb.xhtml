@@ -35,11 +35,11 @@
 </figure>
 
 <p class="initial">
-  Compare &amp; Backup, kurz MCmpBack, ist ein reines Backup-Programm, das in einer Zwei-Fenster-Ansicht ein halbautomatisches Backup von der Festplatte auf Sicherungsmedien wie externe Festplatten, SDcards oder USBsticks, aber auch umgekehrt bietet. Basis dafür sind Profile, in denen Quell- und Ziel-Pfad sowie ein Dateifilter als Regulärer Ausdruck vorab festgelegt werden. Ich benutze MCmpBack als ausschließliches Backup-Programm auf meinen PCs sowohl unter MS Windows X als auch Fedora 32 Linux. Beide Programme basieren auf denselben Quelltexten und liegen nur als 64 Bit-Versionen vor.
+  Compare &amp; Backup, kurz MCmpBack, ist ein reines Backup-Programm, das in einer Zwei-Fenster-Ansicht ein halbautomatisches Backup von der Festplatte auf Sicherungsmedien wie externe Festplatten, SDcards oder USBsticks, aber auch umgekehrt bietet. Basis dafür sind Profile, in denen Quell- und Ziel-Pfad sowie ein Dateifilter als Regulärer Ausdruck vorab festgelegt werden. Ich benutze MCmpBack ausschließlich als schnelles Backup-Programm für die tägliche Sicherung meiner Daten von meinen PCs sowohl unter MS Windows X als auch Fedora 32 Linux. Für beide Programme werden natürlich dieselben Quelltexte verwendet, sie liegen nur als 64 Bit-Versionen vor.
 </p>
 
 <p class="initial">
-  Mit dem Programm ist ein halbautomatisches Backup möglich: Es sucht mit einem ButtonClick in den beiden Verzeichnissen links und rechts nach geänderten und neuen Dateien, die dann mit einem weiteren ButtonClick in das andere Verzeichnis kopiert werden können. Aber auch die Auswahl der zu kopierenden Dateien per Maus ist möglich. Sie können dann auch mit einem RechtsClick kopiert werden.
+  Mit dem Programm ist ein halbautomatisches Backup möglich: Es sucht mit einem ButtonClick — vorzugsweise natürlich auf der Seite, die gesichert werden soll — nach geänderten und neuen Dateien, die dann mit einem weiteren ButtonClick in das andere Verzeichnis kopiert werden können. Aber auch die Auswahl der zu kopierenden Dateien per Maus ist möglich. Sie können dann auch mit einem RechtsClick kopiert — oder gelöscht — werden.
 </p>
 
 <p class="initial">
@@ -47,39 +47,42 @@
 </p>
 
 <ul>
-  <li>Grün sind neuere Dateien, die ihre Partner, die roten Dateien, überschreiben.</li>
+  <li>Grün sind neuere Dateien, die ihre Partner, die roten Dateien, überschreiben werden.</li>
   <li>Rot sind ältere Dateien, die von den neueren, grünen überschrieben werden.</li>
   <li>Blau sind neue Dateien, auch Waisen genannt, die noch keinen Partner auf der anderen Seite haben.</li>
-  <li>Grau sind die Platzhalter für die blauen, neuen Dateien bzw. nicht vorhandene Ordner.</li>
+  <li>Grau sind die Platzhalter für die blauen, neuen Dateien.</li>
   <li>Dateien, die gleich sind, werden nicht angezeigt.</li>
 </ul>
+
+<p class="initial">
+  Im Moment bedeutet ›gleiche Dateien‹ noch lediglich Gleichheit von Datum und Zeit der letzten Änderung.
+</p>
 
 <p class="initial">
   Nicht vorhandene Ordner werden beim Kopieren automatisch erzeugt. Mit der neuesten Version ist es aber auch möglich, ganze Ordner zu löschen — aus Sicherheitsgründen jedoch immer nur einen und auch nur per RechtsClick.
 </p>
 
 <p class="initial">
+  Dummer Weise ist seit der Einführung der Windows-spezifischen Funktion <code>SHFileOperationW</code> im Programm der Schreibschutzschalter ohne Wirkung: WinX überschreibt und löscht <code>readonly</code> Dateien gnadenlos, auch wenn der Schalter nicht gesetzt ist. Hier ist noch Arbeit angesagt. Unter Linux ist der Schreibschutz ebenfalls ein Problem: Überschreiben kann man schreibgeschützte Dateien nicht — wohl aber löschen … Hier funktioniert der besagte Schalter beim Überschreiben, hat aber beim Löschen keine Wirkung.
+</p>
+
+<p class="initial">
+  Mit dem Schalter ›Neuere Dateien mit älteren überschreiben‹ kann man genau das, muss allerdings in reiner Handarbeit die entsprechenden Dateien mit der Maus auswählen und per RechtsClick kopieren.
+</p>
+
+<p class="initial">
   Ein weiteres Sicherheitsnetz ist, dass Dateien und Ordner — wann immer möglich — nur in den Papierkorb verschoben werden. Das funktioniert auch unter Linux und wird ermöglicht durch die Unit <code>t4a_trashcan.pas</code> von Hans Luijten, die auf <a href="https://www.tweaking4all.com/software-development/lazarus-development/lazarus-crossplatform-trashcan/">tweaking4all.com</a> zu finden ist.
 </p>
 
-<h4>Das Programme für MS Windows</h4>
+<h4>Download</h4>
 
 <p class="initial">
-  Compare &amp; Backup für MS Windows gibt es nur als 64 Bit-Version:
+  Die Programme werden nicht installiert, sie sind vollständig und laufen in jedem Verzeichnis. Sie legen aber Konfigurationsdateien an, in Linux im <code>HOME</code> unter <code>.config/mtools/MCmpBack</code>, unter WinX im User-Verzeichnis unter <code>AppData\Roaming\mtools\MCmpBack</code>.
 </p>
 
 <ul>
-  <li><a href="winx/mcbwinx.7z">mcbwinx.7z</a></li>
-</ul>
-
-<h4>Das Programme für Fedora 32</h4>
-
-<p class="initial">
-  Compare &amp; Backup für Fedora 32 gibt es nur als 64 Bit-Version:
-</p>
-
-<ul>
-  <li><a href="linx/mcbwinx.7z">mcblinx.7z</a></li>
+  <li><a href="winx/mcbwinx.7z">mcbwinx.7z</a> für MS Windows, 64 Bit-Version</li>
+  <li><a href="linx/mcblinx.7z">mcblinx.7z</a> für Fedora 32, 64 Bit-Version</li>
 </ul>
 
 </article>
@@ -89,7 +92,7 @@
     Zuletzt geändert am:
     <br />
     <time>
-      17. Mai 2020
+      18. Mai 2020
     </time>
   </div>
 </footer>

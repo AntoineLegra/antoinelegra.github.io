@@ -35,31 +35,26 @@
 </figure>
 
 <p class="initial">
-  Der Kalender mit Datenbank, kurz MKalender, ist ein kleines Kalender-Tool mit Datenbank-Anbindung. Für das Programm wurde u.a. eine eigene Kalender-Komponente für die Lazarus ToolPalette entwickelt und mit der SQLite-Unterstützung von Lazarus experimentiert. Es wurden Feiertagsberechnungen implementiert, umfangreiche Suchmöglichkeiten eingebaut sowie eine Kontakte-Tabelle.
+  Der Kalender mit Datenbank, kurz MKalender, ist ein kleines Kalender-Tool mit Datenbank-Anbindung. Für das Programm wurde u.a. eine eigene Kalender-Komponente für die Lazarus ToolPalette entwickelt und mit der SQLite-Unterstützung von Lazarus experimentiert. Es wurden Feiertagsberechnungen implementiert, umfangreiche Suchmöglichkeiten eingebaut sowie eine einfache Kontakte-Tabelle.
 </p>
 
 <p class="initial">
-  Die beiden Programm-Versionen für MS Windows X und Fedora Linux basieren auf denselben Quelltexten und liegen nur als 64 Bit-Versionen vor. Für den Betrieb unter Windows muss sich eine <code>sqlite3.dll</code> im Programmverzeichnis befinden. Die Linux-Version hat (noch) den Pfad einprogrammiert, mit dem die Library unter Fedora zu finden ist.
+  Über ›Export‹ und ›Import‹ kann die gesamte MKalender-Datenbank als SQLDump gesichert und auch wieder geladen werden. Bei diesem Vorgang wird gleich der Index bereinigt.
 </p>
 
-<h4>Das Programme für MS Windows</h4>
+<p class="initial">
+  Die beiden Programm-Versionen für MS Windows X und Fedora Linux basieren auf denselben Quelltexten und liegen nur als 64 Bit-Versionen vor.
+</p>
+
+<h4>Download</h4>
 
 <p class="initial">
-  MKalender für MS Windows gibt es nur als 64 Bit-Version:
+  Die Programme werden nicht installiert, sie laufen in jedem Verzeichnis, benötigen aber dazu eine SQLite-Library. Unter Windows muss die <code>sqlite3.dll</code> im selben Verzeichnis stehen, wie das Programm, in der Linux-Version ist der Pfad (noch) hart codiert für Fedora. Die Programme legen außerdem Konfigurationsdateien an, in Linux im <code>HOME</code> unter <code>.config/mtools/MKalender</code>, unter WinX im User-Verzeichnis unter <code>AppData\Roaming\mtools\MKalender</code>. Die MKalender-Datenbank selbst kann in einem beliebigen Verzeichnis gespeichert werden.
 </p>
 
 <ul>
-  <li><a href="winx/mkalwinx.7z">mkalwinx.7z</a></li>
-</ul>
-
-<h4>Das Programme für Fedora 32</h4>
-
-<p class="initial">
-  MKalender für Fedora 32 gibt es nur als 64 Bit-Version:
-</p>
-
-<ul>
-  <li><a href="linx/mkalinx.7z">mkalinx.7z</a></li>
+  <li><a href="winx/mkalwinx.7z">mkalwinx.7z</a> für MS Windows, 64 Bit-Version</li>
+  <li><a href="linx/mkalinx.7z">mkalinx.7z</a> für Fedora 32, 64 Bit-Version</li>
 </ul>
 
 </article>
@@ -69,7 +64,7 @@
     Zuletzt geändert am:
     <br />
     <time>
-      17. Mai 2020
+      18. Mai 2020
     </time>
   </div>
 </footer>
