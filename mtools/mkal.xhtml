@@ -38,7 +38,7 @@
 </figure>
 
 <p class="initial">
-  Der Kalender mit Datenbank, kurz MKalender, ist ein kleines Kalender-Tool mit Datenbank-Anbindung. Für das Programm wurde u.a. eine eigene Kalender-Komponente für die Lazarus ToolPalette entwickelt und mit der SQLite-Unterstützung von Lazarus experimentiert. Es wurden Feiertagsberechnungen implementiert, umfangreiche Suchmöglichkeiten eingebaut sowie eine einfache Kontakte-Tabelle.
+  Der Kalender mit Datenbank, kurz MKalender, ist ein kleines Kalender-Tool mit Datenbank-Anbindung. Für das Programm wurde u.a. eine eigene Kalender-Komponente für die Lazarus ToolPalette entwickelt und mit der SQLite3-Unterstützung von Lazarus experimentiert. Es wurden Feiertagsberechnungen implementiert, umfangreiche Suchmöglichkeiten eingebaut sowie eine einfache Kontakte-Tabelle.
 </p>
 
 <p class="initial">
@@ -52,12 +52,16 @@
 <h4>Download</h4>
 
 <p class="initial">
-  Die Programme werden nicht installiert, sie laufen in jedem Verzeichnis, benötigen aber dazu eine SQLite-Library. Unter Windows muss die <code>sqlite3.dll</code> im selben Verzeichnis stehen, wie das Programm, in der Linux-Version ist der Pfad (noch) hart codiert für Fedora. Die Programme legen außerdem Konfigurationsdateien an, in Linux im <code>HOME</code> unter <code>.config/mtools/MKalender</code>, unter WinX im User-Verzeichnis unter <code>AppData\Roaming\mtools\MKalender</code>. Die MKalender-Datenbank selbst kann in einem beliebigen Verzeichnis gespeichert werden.
+  Die Programme werden nicht installiert, sie laufen in jedem Verzeichnis, benötigen aber dazu eine SQLite3-Library. Die Programme legen Konfigurationsdateien an, in Linux im <code>HOME</code> unter <code>.config/mtools/MKalender</code>, unter WinX im User-Verzeichnis unter <code>AppData\Roaming\mtools\MKalender</code>. Die MKalender-Datenbank selbst kann in einem beliebigen Verzeichnis gespeichert werden.
+</p>
+
+<p class="initial">
+  Ab der Version <code>v0.9.16.44</code> vom 10. Juni 2020 ist es möglich, den Standort der SQLite3-Library in beiden Betriebssystem-Versionen zu ändern. Dazu muss man das Programm einmalig starten und wieder beenden. In der Programmkonfiguration MKalender.xml (siehe vorigen Absatz) kann man dann unter ›libSqlite‹ den Pfad der SQLite3 per Hand den Gegebenheiten auf dem Ziel-System anpassen. Damit dürfte MKalender auch auf mehreren anderen Linux-Versionen laufen. Und auch unter WinX kann das Programm profitieren, wenn auf dem System anderweitig schon eine SQLite3 installiert ist.
 </p>
 
 <ul>
-  <li><a href="winx/mkalwinx.7z">mkalwinx.7z</a> (<code>v0.9.16.31</code>) für MS Windows, 64 Bit-Version</li>
-  <li><a href="linx/mkalinx.7z">mkalinx.7z</a> für Fedora 32, 64 Bit-Version</li>
+  <li><a href="winx/mkalwinx.7z">mkalwinx.7z</a> (<code>v0.9.16.44</code>) für MS Windows X, 64 Bit-Version</li>
+  <li><a href="linx/mkalinx.7z">mkalinx.7z</a> (<code>v0.9.16.44</code>) für Fedora 32, 64 Bit-Version</li>
 </ul>
 
 </article>
@@ -67,7 +71,7 @@
     Zuletzt geändert am:
     <br />
     <time>
-      18. Mai 2020
+      10. Juni 2020
     </time>
   </div>
 </footer>
