@@ -33,13 +33,27 @@
     <img src="pics/mcbwinx.png" style="width: 100%;" />
   </a>
   <figcaption>
-    MCmpBack unter Windows.
+    MCmpBack unter WinX.
   </figcaption>
 </figure>
 
 <p class="initial">
-  Compare &amp; Backup, kurz MCmpBack, ist ein reines Backup-Programm, das in einer Zwei-Fenster-Ansicht ein halbautomatisches Backup von der Festplatte auf Sicherungsmedien wie externe Festplatten, SDcards oder USBsticks, aber auch umgekehrt bietet. Basis dafür sind Profile, in denen Quell- und Ziel-Pfad sowie ein Dateifilter als Regulärer Ausdruck vorab festgelegt werden. Ich benutze MCmpBack ausschließlich als schnelles Backup-Programm für die tägliche Sicherung meiner Daten von meinen PCs sowohl unter MS Windows X als auch Fedora 32 Linux. Für beide Programme werden natürlich dieselben Quelltexte verwendet, sie liegen nur als 64 Bit-Versionen vor.
+  Compare &amp; Backup, kurz MCmpBack, ist ein reines Backup-Programm, das in einer Zwei-Fenster-Ansicht ein halbautomatisches Backup von der Festplatte auf Sicherungsmedien wie externe Festplatten, SDcards oder USBsticks, aber auch umgekehrt bietet. Basis dafür sind Profile, in denen Quell- und Ziel-Pfad sowie ein Dateifilter als Regulärer Ausdruck vorab festgelegt werden. Ich benutze MCmpBack ausschließlich als schnelles Backup-Programm für die tägliche Sicherung meiner Daten von meinen PCs sowohl unter MS Windows X als auch Fedora 32 Linux.
 </p>
+
+<p class="initial">
+  Für beide Programme werden selbstverständlich dieselben Quelltexte verwendet. Die compilierten Programme liegen nur als 64 Bit-Versionen vor.
+</p>
+
+<div class="zweispalten">
+<ul>
+  <li><a href="#ueberblick">Über das Programm</a></li>
+  <li><a href="#runterladen">Download des Programms</a></li>
+  <li><a href="#cpydel_files">Löschen und Kopieren von Files</a></li>
+</ul>
+</div>
+
+<h2 id="ueberblick">Über das Programm</h2>
 
 <p class="initial">
   Mit dem Programm ist ein halbautomatisches Backup möglich: Es sucht mit einem ButtonClick — vorzugsweise natürlich auf der Seite, die gesichert werden soll — nach geänderten und neuen Dateien, die dann mit einem weiteren ButtonClick in das andere Verzeichnis kopiert werden können. Aber auch die Auswahl der zu kopierenden Dateien per Maus ist möglich. Sie können dann auch mit einem RechtsClick kopiert — oder gelöscht — werden.
@@ -58,7 +72,7 @@
 </ul>
 
 <p class="initial">
-  Im Moment bedeutet ›gleiche Dateien‹ noch lediglich Gleichheit von Datum und Zeit der letzten Änderung.
+  Im Moment bedeutet ›gleiche Dateien‹ noch lediglich Gleichheit von Datum und Zeit der letzten Änderung. Geplant ist hier noch ein Vergleich mit Hashes.
 </p>
 
 <p class="initial">
@@ -66,18 +80,22 @@
 </p>
 
 <p class="initial">
-  Dummer Weise ist seit der Einführung der Windows-spezifischen Funktion <code>SHFileOperationW</code> im Programm der Schreibschutzschalter ohne Wirkung: WinX überschreibt und löscht <code>readonly</code> Dateien gnadenlos, auch wenn der Schalter nicht gesetzt ist. Hier ist noch Arbeit angesagt. Unter Linux ist der Schreibschutz ebenfalls ein Problem: Überschreiben kann man schreibgeschützte Dateien nicht — wohl aber löschen … Hier funktioniert der besagte Schalter beim Überschreiben, hat aber beim Löschen keine Wirkung.
+  Dummer Weise ist seit der Einführung der WinX-spezifischen Funktion <code>SHFileOperationW</code> im Programm der Schreibschutzschalter ohne Wirkung: WinX überschreibt und löscht <code>readonly</code> Dateien gnadenlos, auch wenn der Schalter nicht gesetzt ist. Hier ist noch Arbeit angesagt. Unter Linux ist der Schreibschutz ebenfalls ein Problem: Überschreiben kann man schreibgeschützte Dateien nicht — wohl aber löschen … Hier funktioniert der besagte Schalter beim Überschreiben, hat aber beim Löschen keine Wirkung.
 </p>
 
 <p class="initial">
-  Mit dem Schalter ›Neuere Dateien mit älteren überschreiben‹ kann man genau das, muss allerdings in reiner Handarbeit die entsprechenden Dateien mit der Maus auswählen und per RechtsClick kopieren.
+  Mit dem Schalter ›Neuere Dateien mit älteren überschreiben‹ kann man genau das, man muss dann allerdings in reiner Handarbeit die entsprechenden Dateien mit der Maus auswählen und per RechtsClick kopieren.
 </p>
 
 <p class="initial">
   Ein weiteres Sicherheitsnetz ist, dass Dateien und Ordner — wann immer möglich — nur in den Papierkorb verschoben werden. Das funktioniert auch unter Linux und wird ermöglicht durch die Unit <code>t4a_trashcan.pas</code> von Hans Luijten, die auf <a href="https://www.tweaking4all.com/software-development/lazarus-development/lazarus-crossplatform-trashcan/">tweaking4all.com</a> zu finden ist.
 </p>
 
-<h4>Download</h4>
+<p class="initial">
+  Danke für die tolle Idee und Umsetzung, Hans!
+</p>
+
+<h2 id="runterladen">Download des Programms</h2>
 
 <p class="initial">
   Die Programme werden nicht installiert, sie sind vollständig und laufen in jedem Verzeichnis. Sie legen aber Konfigurationsdateien an, in Linux im <code>HOME</code> unter <code>.config/mtools/MCmpBack</code>, unter WinX im User-Verzeichnis unter <code>AppData\Roaming\mtools\MCmpBack</code>.
@@ -88,6 +106,12 @@
   <li><a href="linx/mcblinx.7z">mcblinx.7z</a> für Fedora 32, 64 Bit-Version</li>
 </ul>
 
+<h2 id="cpydel_files">Löschen und Kopieren von Files</h2>
+
+<p class="initial">
+  Basierend auf der oben erwähnten Unit <code>t4a_trashcan.pas</code> von Hans Luijten habe ich für das Kopieren und Löschen von Files eine ähnliche Unit namens <a href="undcfile.xhtml">dateifuncs.pas</a> entwickelt, wobei allerdings MacOS nicht berücksichtigt werden konnte, da ich keinen Zugriff auf derartige Hardware habe. Ziel dieser Unit war es, einen einheitlichen Call der Funktionen zu ermöglichen, um das Hauptprogramm von einigen <code>{$IFDEF … } … {$ELSE …} … {$ENDIF}</code> zu entlasten und es so lesbarer und einfacher zu gestalten.
+</p>
+
 </article>
 
 <footer>
@@ -95,7 +119,7 @@
     Zuletzt geändert am:
     <br />
     <time>
-      18. Mai 2020
+      25. Juni 2020
     </time>
   </div>
 </footer>
