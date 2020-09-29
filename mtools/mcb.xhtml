@@ -50,6 +50,7 @@
   <li><a href="#ueberblick">Über das Programm</a></li>
   <li><a href="#runterladen">Download des Programms</a></li>
   <li><a href="#cpydel_files">Löschen und Kopieren von Files</a></li>
+  <li><a href="#fehler_korrektur">Fehlerbeseitigung</a></li>
 </ul>
 </div>
 
@@ -103,19 +104,21 @@
 
 <ul>
   <li><a href="winx/mcbwinx.7z">mcbwinx.7z</a> (<code>v0.9.2.7</code>) für MS Windows, 64 Bit-Version</li>
-  <li><a href="linx/mcblinx.7z">mcblinx.7z</a> für Fedora 32, 64 Bit-Version</li>
+  <li><a href="linx/mcblinx.7z">mcblinx.7z</a> (<code>v0.9.2.6</code>) für Fedora 32, 64 Bit-Version</li>
 </ul>
 
 <h2 id="cpydel_files">Löschen und Kopieren von Files</h2>
 
 <p class="initial">
-  Basierend auf der oben erwähnten Unit <code>t4a_trashcan.pas</code> von Hans Luijten habe ich für das Kopieren und Löschen von Files eine ähnliche Unit namens <a href="undcfile.xhtml">dateifuncs.pas</a> entwickelt, wobei allerdings MacOS nicht berücksichtigt werden konnte, da ich keinen Zugriff auf derartige Hardware habe. Ziel dieser Unit war es, einen einheitlichen Call der Funktionen zu ermöglichen, um das Hauptprogramm von einigen <code>{$IFDEF … } … {$ELSE …} … {$ENDIF}</code> zu entlasten und es so lesbarer und einfacher zu gestalten.
+  Basierend auf der oben erwähnten Unit <code>t4a_trashcan.pas</code> von Hans Luijten wurde für das Kopieren und Löschen von Files eine ähnliche Unit namens <a href="undcfile.xhtml">dateifuncs.pas</a> entwickelt, wobei MacOS nicht berücksichtigt werden konnte — derartige Hardware ist nicht im Zugriff. Ziel dieser Unit war es, einen einheitlichen Call der Funktionen zu ermöglichen, um das Hauptprogramm von einigen <code>{$IFDEF … } … {$ELSE …} … {$ENDIF}</code> zu entlasten und es so lesbarer und einfacher zu gestalten.
 </p>
 
-<h2 id="fehler_handling">Fehlerbeseitigung</h2>
+<h2 id="fehler_korrektur">Fehlerbeseitigung</h2>
 
 <ol>
-  <li><strong>mcb 0.9.2.7</strong>: Es wurde ein gravierender ein Fehler in der Version mcb 0.9.2.6 vom 2020-06-25 korrigiert, der beim Löschen von Files per Mausklick stillschweigend auch Ordner gelöscht hatte, wenn solche (mit-) selektiert waren.</li>
+  <li><strong>mcb 0.9.2.7</strong>: Es wurde ein gravierender ein Fehler in der Version mcb 0.9.2.6 vom 2020-06-25 korrigiert, der beim Löschen von Files per Rechtsklick stillschweigend auch Ordner gelöscht hatte, wenn solche (mit-) selektiert waren.
+  <br />
+  <strong>In der Linux-Version ist der Fehler noch nicht korrigiert! Also bitte nur Files selektieren!</strong></li>
 </ol>
 
 </article>
