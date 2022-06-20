@@ -37,7 +37,7 @@
 </p>
 
 <p class="initial">
-  Ein herausragendes Merkmal von Lazarus und FreePascal ist, dass sie nicht nur unter MS Windows X, sondern auch unter anderen Betriebssystemen laufen oder dass man mit ihnen per Cross-Compiling Code für andere Betriebssysteme erzeugen kann. In Anwendung wurde hier allerdings nur die Möglichkeit gebracht, den selben Quelltext sowohl unter MS Windows X und Linux — in diesem Fall Fedora 31/32 — sowie in verschiedenen Monitor-Auflösungen (Stichwort HiDPI) einzusetzen und zum Laufen zu bringen.
+  Ein herausragendes Merkmal von Lazarus und FreePascal ist, dass sie nicht nur unter MS Windows X, sondern auch unter anderen Betriebssystemen laufen oder dass man mit ihnen per Cross-Compiling Code für andere Betriebssysteme erzeugen kann. In Anwendung wurde hier allerdings nur die Möglichkeit gebracht, den selben Quelltext sowohl unter MS Windows X und Linux — in diesem Fall Fedora 35 — sowie in verschiedenen Monitor-Auflösungen (Stichwort HiDPI) einzusetzen und zum Laufen zu bringen.
 </p>
 
 <p class="initial">
@@ -50,6 +50,10 @@
   <li><a href="index.xhtml#mkalender">Kalender mit Datenbank</a></li>
 </ul>
 </div>
+
+<p class="initial">
+  Leider gibt es seit den Lazarus Versionen ab 2.0.12 unter Fedora Linux immer wieder Probleme, die unter WinX nicht auftreten.
+</p>
 
 <h2 id="mcmpback">Compare &amp; Backup</h2>
 
@@ -95,7 +99,7 @@
 </p>
 
 <p class="initial">
-  Dummer Weise ist seit der Einführung der WinX-spezifischen Funktion <code>SHFileOperationW</code> im Programm der Schreibschutzschalter ohne Wirkung: WinX überschreibt und löscht <code>readonly</code> Dateien gnadenlos, auch wenn der Schalter nicht gesetzt ist. Hier ist noch Arbeit angesagt. Unter Linux ist der Schreibschutz ebenfalls ein Problem: Überschreiben kann man schreibgeschützte Dateien nicht — wohl aber löschen … Hier funktioniert der besagte Schalter beim Überschreiben, hat aber beim Löschen keine Wirkung.
+  Dummer Weise ist seit der Einführung der WinX-spezifischen Funktion <code>SHFileOperationW</code> im Programm der Schreibschutzschalter ohne Wirkung: WinX überschreibt und löscht <code>readonly</code> Dateien gnadenlos, auch wenn der Schalter nicht gesetzt ist. Unter Linux ist der Schreibschutz ebenfalls ein Problem: Überschreiben kann man schreibgeschützte Dateien nicht — wohl aber löschen … Hier funktioniert der besagte Schalter beim Überschreiben, hat aber beim Löschen keine Wirkung.
 </p>
 
 <p class="initial">
@@ -110,6 +114,10 @@
   Danke für die tolle Idee und Umsetzung, Hans!
 </p>
 
+<p class="initial">
+  Leider gibt es dabei unter Fedora Linux das Problem, dass die Dateien im Ordner ›HOME/.local/share/Trash/info‹ -- also die beim Löschen erzeugten ›.trashinfo‹-Files mit der Herkunft der gelöschten Dateien -- nicht alle gelöscht werden, wenn man den ›Papierkorb‹ auf dem Linux-Desktop leert. Das betrifft hauptsächlich Ordner, darunter solche mit Leerzeichen und mehreren Punkten, aber auch solche mit kurzen Namen wie ›ct‹. Die Dateien selber werden geleert, nur eben nicht einige der ›.trashinfo‹-Files.
+</p>
+
 <h2 id="runterladen">Download des Programms</h2>
 
 <p class="initial">
@@ -117,12 +125,12 @@
 </p>
 
 <p class="initial">
-  Seit Anfang 2022 liegt der Schwerpunkt der Entwicklung auf Linux — WinX läuft nur noch so nebenher …
+  Seit Anfang 2022 liegt der Schwerpunkt der Entwicklung auf Linux — WinX läuft nur noch so nebenher. Gleichzeitig aber gab es mit Lazarus unter Linux etliche Schwierigkeiten bzw. Ungereimtheiten, die in der WinX Version von Lazarus nicht auftraten.
 </p>
 
 <ul>
-  <li><a href="progs/mcblinx.7z">mcblinx.7z</a> (<code>v0.9.3.4</code>) für Fedora 32, 64 Bit-Version</li>
-  <li><a href="progs/mcbwinx.7z">mcbwinx.7z</a> (<code>v0.9.3.5</code>) für MS Windows, 64 Bit-Version</li>
+  <li><a href="progs/mcblinx.7z">mcblinx.7z</a> (<code>v0.9.4.3</code>) für Fedora 36, 64 Bit-Version</li>
+  <li><a href="progs/mcbwinx.7z">mcbwinx.7z</a> (<code>v0.9.4.3</code>) für MS Windows X, 64 Bit-Version</li>
 </ul>
 
 <h2 id="mkalender">Kalender mit Datenbank</h2>
@@ -145,7 +153,7 @@
 </p>
 
 <p class="initial">
-  Für beide Programm-Versionen — Linux und WinX — wurden bis Anfang 2022 dieselben Quelltexte verwendet. Die compilierten Programme liegen nur als 64 Bit-Versionen vor.
+  Für beide Programm-Versionen — Linux und WinX — wurden bis Anfang 2022 dieselben Quelltexte verwendet. Danach gab es einige Fehler oder Ungereimheiten, die Lazarus unter Linux betrafen. Mit den inzwischen eingearbeiteten Hacks ist die gemeinsame Quelltextbasis seit Ende Mai 2022 wieder hergestellt. Die compilierten Programme liegen nur als 64 Bit-Versionen vor.
 </p>
 
 <h4>Download</h4>
@@ -155,7 +163,7 @@
 </p>
 
 <p class="initial">
-  Ab der Version <code>v0.9.16.44</code> vom 10. Juni 2020 ist es möglich, den Standort der SQLite3-Library in beiden Betriebssystem-Versionen zu ändern. Dazu muss man das Programm einmalig starten und wieder beenden. In der Programmkonfiguration MKalender.xml (siehe vorigen Absatz) kann man dann unter ›libSqlite‹ den Pfad der SQLite3 per Hand den Gegebenheiten auf dem Ziel-System anpassen. Damit dürfte MKalender auch auf mehreren anderen Linux-Versionen laufen. Und auch unter WinX kann das Programm profitieren, wenn auf dem System anderweitig schon eine SQLite3 installiert ist.
+  Ab der Version <code>v0.9.16.44</code> vom 10. Juni 2020 ist es möglich, den Standort der SQLite3-Library in beiden Betriebssystem-Versionen per Hand zu ändern. Dazu muss man das (erstmalig installierte) Programm starten und wieder beenden. In der Programmkonfiguration MKalender.xml (siehe vorigen Absatz) kann man dann unter ›libSqlite‹ den Pfad der SQLite3 per Hand den Gegebenheiten auf dem Ziel-System anpassen. Damit dürfte MKalender auch auf mehreren anderen Linux-Versionen laufen. Und auch unter WinX kann das Programm profitieren, wenn auf dem System anderweitig schon eine SQLite3 installiert ist.
 </p>
 
 <p class="initial">
@@ -163,8 +171,8 @@
 </p>
 
 <ul>
-  <li><a href="progs/mkalinx.7z">mkalinx.7z</a> (<code>v0.9.17.4</code>) für Fedora 32, 64 Bit-Version</li>
-  <li><a href="progs/mkalwinx.7z">mkalwinx.7z</a> (<code>v0.9.17.4</code>) für MS Windows X, 64 Bit-Version</li>
+  <li><a href="progs/mkalinx.7z">mkalinx.7z</a> (<code>v0.9.17.6</code>) für Fedora 36, 64 Bit-Version</li>
+  <li><a href="progs/mkawinx.7z">mkawinx.7z</a> (<code>v0.9.17.6</code>) für MS Windows X, 64 Bit-Version</li>
 </ul>
 
 </article>
@@ -174,7 +182,7 @@
     Zuletzt geändert am:
     <br />
     <time>
-      23. April 2022
+      06. Juni 2022
     </time>
   </div>
 </footer>
