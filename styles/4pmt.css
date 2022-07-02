@@ -185,7 +185,7 @@ footer { /* --------------------------------- der flexible Fußzeilenbereich */
     border-top          : 1px solid silver;
 }
 
-pre { /* -------------------------------- der Text für Code oder Stammbäume */
+pre { /* ------------------------------------------------ der Text für Code */
     font-family         : "fs_preformed", monospace;
     font-size           : 10.5pt;
 }
@@ -195,14 +195,6 @@ pre { /* -------------------------------- der Text für Code oder Stammbäume */
     column-rule         : solid 1px;
     column-gap          : 2em;
     column-fill         : balance;
-    -moz-column-count   : 2;
-    -moz-column-rule    : solid 1px;
-    -moz-column-gap     : 2em;
-    -moz-column-fill    : balance;
-    -webkit-column-count: 2;
-    -webkit-column-rule : solid 1px;
-    -webkit-column-gap  : 2em;
-    -webkit-column-fill : balance;
 }
 
 .initial:first-letter { /* --------------- der erste Buchstabe ist verziert */
@@ -210,126 +202,10 @@ pre { /* -------------------------------- der Text für Code oder Stammbäume */
     font-size           : 130%;
 }
 
-.anmerkung { /* ---- ein hübscher Container für Hervorhebungen, Zitate usw. */
-    border              : 1px solid #999;
-    margin              : 0.7em 1em;
-    padding             : 0.3em 1.5em;
-    font-family         : "fs_smallite", sans-serif;
-    font-size           : 91%;
-    background-color    : #ffffe6;
-    box-shadow          : 5px 5px 5px 0px #777;
-    border-radius       : 20px;
-}
-
-.indexlink { /* ----------------- diverse Formatierungen für diverse Zwecke */
-    margin              : 1em 1em 1em 0;
-    padding             : 0 0.25em;
-    font-family         : "fs_smallbold", sans-serif;
-    font-size           : 0.9em;
-    font-weight         : bold;
-    text-align          : right;
-}
-
 .vorsatz {
     font-family         : "fs_smallbold", sans-serif;
     font-size           : 0.9em;
     text-align          : justify;
-}
-
-.notiz {
-    margin              : 1em 1em 1em 0;
-    padding             : 0 0.25em;
-    font-family         : "fs_smallbold", sans-serif;
-    font-size           : 0.9em;
-    border-top          : 1px solid silver;
-}
-
-.genealogietext {
-    font-family         : "fs_stdtxt", serif;
-    /*font-family         : "fs_smallite", sans-serif;*/
-    font-size           : 1em;
-    text-align          : justify;
-}
-
-.zitate {
-    margin-left         : 40px;
-    font-family         : "fs_smallbold", sans-serif;
-    font-size           : 0.9em;
-    font-style          : italic;
-}
-
-.verfasser {
-    margin-right        : 40px;
-    font-family         : "fs_smallbold", sans-serif;
-    font-size           : 0.9em;
-    font-style          : italic;
-    text-align          : right;
-}
-
-.zenter {
-    text-align          : center;
-}
-
-.fussnote { /* -------------------- die Fußnoten im wissenschaftlichen Stil */
-    margin-left         : 1.5em;
-    text-indent         : -1.5em;
-    margin-top          : 0.2em;
-    margin-bottom       : 0em;
-    font-family         : "fs_smallite", sans-serif;
-    font-size           : 95%;
-}
-
-.fussnotetext {
-    font-size           : 85%;
-}
-
-a.fussnotetext:link {
-    color               : red;
-}
-
-a.fussnotetext:visited {
-    color               : maroon;
-    text-decoration     : none;
-}
-
-.prettytable { /* ----------------------------------- die hübschen Tabellen */
-    margin-top          : 1em;
-    margin-bottom       : 1em;
-    background-color    : #ffffe6;
-    border-collapse     : collapse;
-    border-width        : 1px;
-    border-style        : solid;
-    border-color        : #000000;
-    empty-cells         : show;
-    text-align          : left;
-    box-shadow          : 5px 5px 5px 0px #777;
-}
-
-.prettyrow {
-    border-collapse     : collapse;
-    border-width        : 1px;
-    border-style        : solid;
-    border-color        : #000000;
-}
-
-.prettycol {
-    padding             : 0.2em 0.3em 0em 0.3em;
-    border-collapse     : collapse;
-    border-width        : 1px;
-    border-style        : solid;
-    border-color        : #000000;
-    vertical-align      : top;
-}
-
-.prettyheader {
-    padding             : 0.2em 0em 0em 0.5em;
-    border-collapse     : collapse;
-    border-width        : 1px;
-    border-style        : solid;
-    border-color        : #000000;
-    background-color    : #f0f0c0;
-    vertical-align      : top;
-    text-align          : center;
 }
 
 a.plain { /* ---------------------------------- diverse Link-Formatierungen */

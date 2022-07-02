@@ -10,7 +10,7 @@
 
 <header>
   <div id="linksoben">antoinelegra.github.io</div>
-  <div id="topthema">4 Pieces MTools</div>
+  <div id="topthema">2 Pieces MTools</div>
 </header>
 
 <nav>
@@ -20,7 +20,7 @@
 </nav>
 
 <article>
-<h1>Die 4 Pieces MTools</h1>
+<h1>Die 2 Pieces MTools</h1>
 
 <p class="vorsatz">
   Diese Seiten auch auf <a href="https://github.com/AntoineLegra/antoinelegra.github.io">GitHub</a> ansehen.
@@ -33,15 +33,15 @@
 </figure>
 
 <p class="initial">
-  Die ›4 Pieces MTools‹ waren vier kleine Stücke 64 Bit-Software, die die Möglichkeiten der Programmentwicklung mit der freien Software Lazarus und FreePascal ausloten sollten.
+  Die ›2 Pieces MTools‹ waren ursprünglich vier kleine Stücke 64 Bit-Software, die die Möglichkeiten der Programmentwicklung mit der freien Software Lazarus und FreePascal ausloten sollten.
 </p>
 
 <p class="initial">
-  Ein herausragendes Merkmal von Lazarus und FreePascal ist, dass sie nicht nur unter MS Windows X, sondern auch unter anderen Betriebssystemen laufen oder dass man mit ihnen per Cross-Compiling Code für andere Betriebssysteme erzeugen kann. In Anwendung wurde hier allerdings nur die Möglichkeit gebracht, den selben Quelltext sowohl unter MS Windows X und Linux — in diesem Fall Fedora 35 — sowie in verschiedenen Monitor-Auflösungen (Stichwort HiDPI) einzusetzen und zum Laufen zu bringen.
+  Ein herausragendes Merkmal von Lazarus und FreePascal ist, dass sie nicht nur unter MS Windows X, sondern auch unter anderen Betriebssystemen laufen oder dass man mit ihnen per Cross-Compiling Code für andere Betriebssysteme erzeugen kann. In Anwendung wurde hier allerdings nur die Möglichkeit gebracht, den selben Quelltext sowohl unter MS Windows X und Linux — in diesem Fall seit Fedora 31 — sowie in verschiedenen Monitor-Auflösungen (Stichwort HiDPI) einzusetzen und zum Laufen zu bringen.
 </p>
 
 <p class="initial">
-  Seit Anfang 2022 liegt der Schwerpunkt der Entwicklung auf Linux — WinX läuft nur noch so nebenher. Die ›4 Pieces MTools‹ bestehen daher auch nur noch aus den Programmen:
+  Seit Anfang 2022 liegt der Schwerpunkt der Entwicklung auf Linux — WinX läuft nur noch so nebenher. Meist kompiliere ich die WinX-Version einfach aus den eins zu eins übertragenen Linux-Sources. Die ehemaligen ›4 Pieces MTools‹ bestehen daher auch nur noch aus den Programmen:
 </p>
 
 <div class="zweispalten">
@@ -52,34 +52,30 @@
 </div>
 
 <p class="initial">
-  Leider gibt es seit den Lazarus Versionen ab 2.0.12 unter Fedora Linux immer wieder Probleme, die unter WinX nicht auftreten.
+  Seit den Versionen mkal 0.9.17.04 und mcbl 0.9.4.8 sind in beiden Programmen Routinen eingebaut, die einen Mehrfachstart der Programme verhindern — ein Zugeständnis an meine Arbeitsweise mit den vielen Fedora Desktops, bei denen ich manchmal eines der Programm versehentlich zweimal starte und mich dann über zumindest unangenehme Seiteneffekte wundere … Diese Routinen, die ich hierbei verwende, haben die User msvanred und hubblec4 im deutschen Lazarus-Forum <a href="https://www.lazarusforum.de/viewtopic.php?f=9&amp;t=8606">vorgestellt</a>.
+</p>
+
+<p class="initial">
+  Außerdem wurden beide Programme in den letzten Wochen für das DPI scaling fast vollständig mit den <a href="https://www.lazarusforum.de/viewtopic.php?f=1&amp;t=14263">neuen Lazarus-Icons</a> ausgestattet, die zum größten Teil von Roland Hahn (aka ›ally‹) gezeichnet wurden.
 </p>
 
 <h2 id="mcmpback">Compare &amp; Backup</h2>
 
 <figure class="figlinks" style="width: 350px;">
-  <a href="pics/mcbwinx.png">
-    <img src="pics/mcbwinx.png" style="width: 100%;" />
+  <a href="pics/mcblinx.png">
+    <img src="pics/mcblinx.png" style="width: 100%;" />
   </a>
   <figcaption>
-    MCmpBack unter WinX.
+    MCmpBack unter Fedora Linux.
   </figcaption>
 </figure>
 
 <p class="initial">
-  Compare &amp; Backup, kurz MCmpBack, ist ein kleines Backup-Programm, das in einer Zwei-Fenster-Ansicht Dateien halbautomatisch auf externe Festplatten, SDcards oder USBsticks, aber auch umgekehrt speichern kann. Basis dafür sind Profile, in denen Quell- und Ziel-Pfad sowie ein Dateifilter als Regulärer Ausdruck vorab festgelegt werden. Ich benutze MCmpBack ausschließlich als schnelles Backup-Programm für die tägliche Sicherung meiner Daten von meinen PCs sowohl unter MS Windows X als auch Fedora 35 Linux.
+  Compare &amp; Backup, kurz MCmpBack, ist ein kleines Backup-Programm, das in einer Zwei-Fenster-Ansicht Dateien halbautomatisch auf externe Festplatten, SDcards oder USBsticks, aber auch umgekehrt speichern kann. Basis dafür sind Profile, in denen Quell- und Ziel-Pfad sowie ein Dateifilter als Regulärer Ausdruck vorab festgelegt werden. Ich benutze MCmpBack ausschließlich als schnelles Backup-Programm für die tägliche Sicherung meiner Daten von meinen PCs sowohl unter MS Windows X als auch Fedora 36 Linux.
 </p>
 
 <p class="initial">
-  Für beide Programm-Versionen — Linux und WinX — wurden bis Anfang 2022 dieselben Quelltexte verwendet. Die compilierten Programme liegen nur als 64 Bit-Versionen vor.
-</p>
-
-<p class="initial">
-  Mit dem Programm ist ein halbautomatisches Backup möglich: Es sucht mit einem ButtonClick — vorzugsweise natürlich auf der Seite, die gesichert werden soll — nach geänderten und neuen Dateien, die dann mit einem weiteren ButtonClick in das andere Verzeichnis kopiert werden können. Aber auch die Auswahl der zu kopierenden Dateien per Maus ist möglich. Sie können dann auch mit einem RechtsClick kopiert — oder gelöscht — werden.
-</p>
-
-<p class="initial">
-  Die jeweiligen Dateien werden dabei zur Unterstützung des Nutzers in verschiedenen Farben angezeigt:
+  Das Programm sucht mit einem ButtonClick — vorzugsweise natürlich auf der Seite, die gesichert werden soll — nach geänderten und neuen Dateien, die dann mit einem weiteren ButtonClick in das andere Verzeichnis kopiert werden können. Aber auch die Auswahl der zu kopierenden Dateien per Maus ist möglich. Sie können dann auch mit einem RechtsClick kopiert — oder gelöscht — werden. Die jeweiligen Dateien werden dabei zur Unterstützung des Nutzers in verschiedenen Farben angezeigt:
 </p>
 
 <ul>
@@ -91,88 +87,68 @@
 </ul>
 
 <p class="initial">
-  Im Moment bedeutet ›gleiche Dateien‹ noch lediglich Gleichheit von Datum und Zeit der letzten Änderung. Geplant ist hier noch ein Vergleich mit Hashes.
+  Im Moment bedeutet ›gleiche Dateien‹ noch lediglich Gleichheit von Datum und Zeit der letzten Änderung. Geplant ist hier noch ein zusätzlicher Vergleich mit Hashes. Nicht vorhandene Ordner werden beim Kopieren automatisch erzeugt. Es ist aber auch möglich, ganze Ordner zu löschen — aus Sicherheitsgründen jedoch immer nur einen und auch nur per RechtsClick.
 </p>
 
 <p class="initial">
-  Nicht vorhandene Ordner werden beim Kopieren automatisch erzeugt. Mit der neuesten Version ist es aber auch möglich, ganze Ordner zu löschen — aus Sicherheitsgründen jedoch immer nur einen und auch nur per RechtsClick.
+  Nach einer Kopier- oder Löschaktion werden beide Verzeichnisse automatisch neu eingelesen. Falls man zwischendurch selbst etwas außerhalb von MCmpBack im Explorer oder in Dateien verändert hat, muss man nach Rückkehr zu MCmpBack zuerst mit dem Button ›Neu einlesen‹ die Ansicht selbst aktualisieren.
 </p>
 
 <p class="initial">
-  Dummer Weise ist seit der Einführung der WinX-spezifischen Funktion <code>SHFileOperationW</code> im Programm der Schreibschutzschalter ohne Wirkung: WinX überschreibt und löscht <code>readonly</code> Dateien gnadenlos, auch wenn der Schalter nicht gesetzt ist. Unter Linux ist der Schreibschutz ebenfalls ein Problem: Überschreiben kann man schreibgeschützte Dateien nicht — wohl aber löschen … Hier funktioniert der besagte Schalter beim Überschreiben, hat aber beim Löschen keine Wirkung.
+  Mit der Einführung der WinX-spezifischen Funktion <code>SHFileOperationW</code> in der WinX-Version ist der Schreibschutzschalter dort leider ohne Wirkung: WinX überschreibt und löscht <code>readonly</code> Dateien gnadenlos, auch wenn der Schalter nicht gesetzt ist. Unter Linux ist der Schreibschutz ebenfalls ein Problem: Überschreiben kann man schreibgeschützte Dateien nicht — wohl aber löschen … Hier funktioniert der besagte Schalter beim Überschreiben (falls der User das Recht dazu hat), hat aber beim Löschen keine Wirkung.
 </p>
 
 <p class="initial">
-  Mit dem Schalter ›Neuere Dateien mit älteren überschreiben‹ kann man genau das, man muss dann allerdings in reiner Handarbeit die entsprechenden Dateien mit der Maus auswählen und per RechtsClick kopieren.
+  Ein weiteres Sicherheitsnetz ist, dass Dateien und Ordner — wann immer möglich — nur in den Papierkorb ›gelöscht‹ werden. Das funktioniert auch unter Linux und wird ermöglicht durch die Unit <code>t4a_trashcan.pas</code> von Hans Luijten, die auf <a href="https://www.tweaking4all.com/software-development/lazarus-development/lazarus-crossplatform-trashcan/">tweaking4all.com</a> zu finden ist.
 </p>
 
 <p class="initial">
-  Ein weiteres Sicherheitsnetz ist, dass Dateien und Ordner — wann immer möglich — nur in den Papierkorb verschoben werden. Das funktioniert auch unter Linux und wird ermöglicht durch die Unit <code>t4a_trashcan.pas</code> von Hans Luijten, die auf <a href="https://www.tweaking4all.com/software-development/lazarus-development/lazarus-crossplatform-trashcan/">tweaking4all.com</a> zu finden ist.
-</p>
-
-<p class="initial">
-  Danke für die tolle Idee und Umsetzung, Hans!
-</p>
-
-<p class="initial">
-  Leider gibt es dabei unter Fedora Linux das Problem, dass die Dateien im Ordner ›HOME/.local/share/Trash/info‹ -- also die beim Löschen erzeugten ›.trashinfo‹-Files mit der Herkunft der gelöschten Dateien -- nicht alle gelöscht werden, wenn man den ›Papierkorb‹ auf dem Linux-Desktop leert. Das betrifft hauptsächlich Ordner, darunter solche mit Leerzeichen und mehreren Punkten, aber auch solche mit kurzen Namen wie ›ct‹. Die Dateien selber werden geleert, nur eben nicht einige der ›.trashinfo‹-Files.
+  Mit dem Schalter ›Neuere Dateien mit älteren überschreiben‹ kann man genau das, muss dann allerdings in reiner Handarbeit die entsprechenden roten Dateien mit der Maus zusammenklicken und per RechtsClick kopieren.
 </p>
 
 <h2 id="runterladen">Download des Programms</h2>
 
 <p class="initial">
-  Die Programme werden nicht installiert, sie sind vollständig und laufen in jedem Verzeichnis. Sie legen aber Konfigurationsdateien an, in Linux im <code>HOME</code> unter <code>.config/mtools/MCmpBack</code>, unter WinX im User-Verzeichnis unter <code>AppData\Roaming\mtools\MCmpBack</code>.
-</p>
-
-<p class="initial">
-  Seit Anfang 2022 liegt der Schwerpunkt der Entwicklung auf Linux — WinX läuft nur noch so nebenher. Gleichzeitig aber gab es mit Lazarus unter Linux etliche Schwierigkeiten bzw. Ungereimtheiten, die in der WinX Version von Lazarus nicht auftraten.
+  Das Programm wird nicht installiert, es läuft in jedem Verzeichnis, legt aber Konfigurationsdateien an, in Linux im <code>HOME</code> unter <code>.config/mtools/MCmpBack</code>, unter WinX im <code>User</code>-Verzeichnis unter <code>AppData\Roaming\mtools\MCmpBack</code>.
 </p>
 
 <ul>
-  <li><a href="progs/mcblinx.7z">mcblinx.7z</a> (<code>v0.9.4.6</code>) für Fedora 36, 64 Bit-Version</li>
-  <li><a href="progs/mcbwinx.7z">mcbwinx.7z</a> (<code>v0.9.4.6</code>) für MS Windows X, 64 Bit-Version</li>
+  <li><a href="progs/mcblinx.7z">mcblinx.7z</a> (<code>v0.9.4.8</code>) für Fedora 36, 64 Bit-Version</li>
+  <li><a href="progs/mcbwinx.7z">mcbwinx.7z</a> (<code>v0.9.4.8</code>) für MS Windows X, 64 Bit-Version</li>
 </ul>
 
 <h2 id="mkalender">Kalender mit Datenbank</h2>
 
 <figure class="figlinks" style="width: 350px;">
-  <a href="pics/mkalwinx.png">
-    <img src="pics/mkalwinx.png" style="width: 100%;" />
+  <a href="pics/mkalinx.png">
+    <img src="pics/mkalinx.png" style="width: 100%;" />
   </a>
   <figcaption>
-    MKalender unter WinX.
+    MKalender unter Fedora Linux.
   </figcaption>
 </figure>
 
 <p class="initial">
-  Der Kalender mit Datenbank, kurz MKalender, ist ein kleines Kalender-Tool mit Datenbank-Anbindung. Für das Programm wurde u.a. eine eigene Kalender-Komponente für die Lazarus ToolPalette entwickelt und mit der SQLite3-Unterstützung von Lazarus experimentiert. Es wurden Feiertagsberechnungen implementiert, umfangreiche Suchmöglichkeiten eingebaut sowie eine einfache Kontakte-Tabelle.
+  Der Kalender mit Datenbank, kurz MKalender, ist ein kleines Kalender-Tool mit Datenbank-Anbindung. Damit wurde die SQLite-Unterstützung von Lazarus erprobt. Für das Programm wurde bereits 2016 eine eigene <a href="sources/index.xhtml">Kalender-Komponente</a> entwickelt, die aber inzwischen beim HiDPI scaling Probleme bereitete. Daher befindet sie sich im Moment wieder im Status RunTime, um sie an das HiDPI scaling anzupassen. Es wurden Feiertagsberechnungen implementiert, umfangreiche Suchmöglichkeiten eingebaut sowie eine einfache Kontakte-Tabelle.
 </p>
 
 <p class="initial">
-  Über ›Export‹ und ›Import‹ kann die gesamte MKalender-Datenbank als SQLDump gesichert und auch wieder geladen werden. Bei diesem Vorgang wird gleich der Index bereinigt.
+  Ab der Version <code>v0.9.16.44</code> vom 10. Juni 2020 ist es möglich, den Standort der SQLite3-Library in beiden Betriebssystem-Versionen per Hand zu ändern. Dazu muss man das (erstmalig installierte) Programm starten und wieder beenden. In der Programmkonfiguration MKalender.xml (siehe weiter unten) kann man dann unter ›libSqlite‹ den Pfad der SQLite3 per Hand den Gegebenheiten auf dem Ziel-System anpassen. Damit dürfte MKalender auch auf anderen Linux-Versionen laufen. Und auch unter WinX kann das Programm profitieren, wenn auf dem System anderweitig schon eine SQLite3 installiert ist.
 </p>
 
 <p class="initial">
-  Für beide Programm-Versionen — Linux und WinX — wurden bis Anfang 2022 dieselben Quelltexte verwendet. Danach gab es einige Fehler oder Ungereimheiten, die Lazarus unter Linux betrafen. Mit den inzwischen eingearbeiteten Hacks ist die gemeinsame Quelltextbasis seit Ende Mai 2022 wieder hergestellt. Die compilierten Programme liegen nur als 64 Bit-Versionen vor.
+  Über ›Export‹ und ›Import‹ kann die gesamte MKalender-Datenbank als SQLDump gesichert und auch wieder geladen werden. Bei diesem Vorgang wird gleich der Index bereinigt. Vor dem Import muss zuerst eine neue Datenbank angelegt werden. 
 </p>
 
 <h4>Download</h4>
 
 <p class="initial">
-  Die Programme werden nicht installiert, sie laufen in jedem Verzeichnis, benötigen aber dazu eine SQLite3-Library. Die Programme legen Konfigurationsdateien an, in Linux im <code>HOME</code> unter <code>.config/mtools/MKalender</code>, unter WinX im User-Verzeichnis unter <code>AppData\Roaming\mtools\MKalender</code>. Die MKalender-Datenbank selbst kann in einem beliebigen Verzeichnis gespeichert werden.
-</p>
-
-<p class="initial">
-  Ab der Version <code>v0.9.16.44</code> vom 10. Juni 2020 ist es möglich, den Standort der SQLite3-Library in beiden Betriebssystem-Versionen per Hand zu ändern. Dazu muss man das (erstmalig installierte) Programm starten und wieder beenden. In der Programmkonfiguration MKalender.xml (siehe vorigen Absatz) kann man dann unter ›libSqlite‹ den Pfad der SQLite3 per Hand den Gegebenheiten auf dem Ziel-System anpassen. Damit dürfte MKalender auch auf mehreren anderen Linux-Versionen laufen. Und auch unter WinX kann das Programm profitieren, wenn auf dem System anderweitig schon eine SQLite3 installiert ist.
-</p>
-
-<p class="initial">
-  Seit Anfang 2022 liegt der Schwerpunkt der Entwicklung auf Linux — WinX läuft nur noch so nebenher ...
+  Das Programm wird nicht installiert, es läuft in jedem Verzeichnis, benötigt aber dazu eine SQLite3-Library und legt eine Konfigurationsdatei an, in Linux im <code>HOME</code> unter <code>.config/mtools/MKalender</code>, unter WinX im <code>User</code>-Verzeichnis unter <code>AppData\Roaming\mtools\MKalender</code>. Die MKalender-Datenbank selbst kann in einem beliebigen Verzeichnis gespeichert werden.
 </p>
 
 <ul>
-  <li><a href="progs/mkalinx.7z">mkalinx.7z</a> (<code>v0.9.17.16</code>) für Fedora 36, 64 Bit-Version</li>
-  <li><a href="progs/mkawinx.7z">mkawinx.7z</a> (<code>v0.9.17.16</code>) für MS Windows X, 64 Bit-Version</li>
+  <li><a href="progs/mkalinx.7z">mkalinx.7z</a> (<code>v0.9.17.17</code>) für Fedora 36, 64 Bit-Version</li>
+  <li><a href="progs/mkawinx.7z">mkawinx.7z</a> (<code>v0.9.17.17</code>) für MS Windows X, 64 Bit-Version</li>
 </ul>
 
 </article>
@@ -182,7 +158,7 @@
     Zuletzt geändert am:
     <br />
     <time>
-      20. Juni 2022
+      02. Juli 2022
     </time>
   </div>
 </footer>
